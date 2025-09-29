@@ -178,7 +178,7 @@ starship_git_info() {
 # export PS1='\[\e]0;\u@\h: \w\a\]\[\033[;32m\]┌──${debian_chroot:+($debian_chroot)──}${VIRTUAL_ENV:+(\[\033[0;1m\]$(basename $VIRTUAL_ENV)\[\033[;32m\])}(\[\033[1;34m\]\u㉿\h\[\033[;32m\])-[\[\033[0;1m\]\w\[\033[;32m\]]\[\033[33m\]$(starship_git_info)\n\[\033[;32m\]└─\[\033[1;34m\]\$\[\033[0m\] '
 
 # Attempt at customization with starship prompt (only status):
-export PS1='\[\e]0;\u@\h: \w\a\]\[\033[;32m\]┌──${debian_chroot:+($debian_chroot)──}${VIRTUAL_ENV:+(\[\033[0;1m\]$(basename $VIRTUAL_ENV)\[\033[;32m\])}(\[\033[1;34m\]\u㉿\h\[\033[;32m\])-[\[\033[0;1m\]\w\[\033[;32m\]]\[\033[;32m\]✓\[\033[33m\]$(starship_git_info)\n\[\033[;32m\]└─\[\033[1;34m\]\$\[\033[0m\] '
+export PS1='\[\e]0;\u@\h: \w\a\]\[\033[;32m\]┌──${debian_chroot:+($debian_chroot)──}${VIRTUAL_ENV:+(\[\033[0;1m\]$(basename $VIRTUAL_ENV)\[\033[;32m\])}(\[\033[1;34m\]\u㉿\h\[\033[;32m\])-[\[\033[0;1m\]\w\[\033[;32m\]] \[\033[33m\]$(starship_git_info)\n\[\033[;32m\]└─\[\033[1;34m\]\$\[\033[0m\] '
 
 # Attempt at customization with starship prompt on multiple lines:
 # export PS1='\[\e]0;\u@\h: \w\a\]\[\033[;32m\]┌──${debian_chroot:+($debian_chroot)──}${VIRTUAL_ENV:+(\[\033[0;1m\]$(basename $VIRTUAL_ENV)\[\033[;32m\])}(\[\033[1;34m\]\u㉿\h\[\033[;32m\])-[\[\033[0;1m\]\w\[\033[;32m\]]\n\[\033[;32m\]├\[\033[0m\]\[\033[33m\]  $(starship_git_info)\n\[\033[;32m\]\[\033[;32m\]│\n└─\[\033[1;34m\]\$ '
