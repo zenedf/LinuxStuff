@@ -157,7 +157,8 @@ fi
 
 . "$HOME/.local/bin/env"
 
-export PATH="$PATH:/home/h45h/worldbanc/private/bin"
+
+export PATH="$PATH:$HOME/worldbanc/private/bin"
 
 
 # Generated for envman. Do not edit.
